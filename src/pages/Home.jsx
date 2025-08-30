@@ -16,8 +16,7 @@ function Home() {
               Bienvenido a <span className="highlight">DELFIA</span>
             </h1>
             <p className="hero-subtitle">
-              Tu plataforma digital para crear códigos QR personalizados y
-              conectar con tu audiencia
+              Eleva tu brillo con joyería única y conecta con tu audiencia a través de códigos QR personalizados
             </p>
           </div>
         </div>
@@ -29,7 +28,7 @@ function Home() {
               <FaQrcode />
             </div>
             <h3>Generador QR</h3>
-            <p>Crea códigos QR únicos con el sello "DELFIA" en el centro</p>
+            <p>Crea códigos QR únicos con el sello "DELFIA" en el centro para tu marca</p>
             <Link to="/qr-generator" className="feature-btn">
               Crear QR
             </Link>
@@ -40,7 +39,7 @@ function Home() {
               <FaLink />
             </div>
             <h3>LinkTree</h3>
-            <p>Conecta con Delfia a través de sus redes sociales y tienda</p>
+            <p>Conecta con Delfia a través de Instagram, tienda online y WhatsApp</p>
             <Link to="/link" className="feature-btn">
               Ver Links
             </Link>

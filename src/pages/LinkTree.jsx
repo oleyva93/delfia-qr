@@ -16,8 +16,8 @@ function LinkTree() {
     {
       id: 1,
       title: "Instagram",
-      subtitle: "@delfia_official",
-      url: "https://instagram.com/delfia_official",
+      subtitle: "@delfia.mx",
+      url: "https://instagram.com/delfia.mx",
       icon: FaInstagram,
       color: "#E4405F",
       gradient: "linear-gradient(135deg, #833AB4, #FD1D1D, #F77737)",
@@ -25,8 +25,8 @@ function LinkTree() {
     {
       id: 2,
       title: "Tienda Online",
-      subtitle: "Productos exclusivos",
-      url: "https://delfia-store.myshopify.com",
+      subtitle: "Joyería con brillo ✨",
+      url: "https://delfia-mx.myshopify.com",
       icon: BiStore,
       color: "#96BF47",
       gradient: "linear-gradient(135deg, #96BF47, #7CB342)",
@@ -58,11 +58,11 @@ function LinkTree() {
             <div className="profile-ring"></div>
           </div>
           <h1 className="profile-name">DELFIA</h1>
-          <p className="profile-bio">✨ Creando magia digital ✨</p>
+          <p className="profile-bio">✨ Eleva tu brillo ✨</p>
           <div className="profile-stats">
             <span className="stat">
               <FaHeart className="stat-icon" />
-              <span>Fashion & Lifestyle</span>
+              <span>Joyería & Lifestyle</span>
             </span>
           </div>
         </div>
