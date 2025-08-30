@@ -52,7 +52,7 @@
 .sparkle-icon {
   font-size: 3rem;
   color: white;
-  animation: sparkle 2s ease-in-out infinite;
+  animation: star 2s ease-in-out infinite;
 }
 
 .profile-ring {
@@ -261,7 +261,7 @@
 }
 
 /* Animations */
-@keyframes sparkle {
+@keyframes star {
   0%, 100% { transform: scale(1) rotate(0deg); }
   50% { transform: scale(1.1) rotate(180deg); }
 }

@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { 
-  FaInstagram, 
-  FaShoppingBag, 
+import {
+  FaInstagram,
+  FaShoppingBag,
   FaWhatsapp,
   FaHeart,
-  FaSparkles
+  FaStar,
 } from "react-icons/fa";
 import { BiStore } from "react-icons/bi";
 import "../styles/LinkTree.css";
@@ -20,7 +20,7 @@ function LinkTree() {
       url: "https://instagram.com/delfia_official",
       icon: FaInstagram,
       color: "#E4405F",
-      gradient: "linear-gradient(135deg, #833AB4, #FD1D1D, #F77737)"
+      gradient: "linear-gradient(135deg, #833AB4, #FD1D1D, #F77737)",
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ function LinkTree() {
       url: "https://delfia-store.myshopify.com",
       icon: BiStore,
       color: "#96BF47",
-      gradient: "linear-gradient(135deg, #96BF47, #7CB342)"
+      gradient: "linear-gradient(135deg, #96BF47, #7CB342)",
     },
     {
       id: 3,
@@ -38,12 +38,12 @@ function LinkTree() {
       url: "https://wa.me/1234567890",
       icon: FaWhatsapp,
       color: "#25D366",
-      gradient: "linear-gradient(135deg, #25D366, #128C7E)"
-    }
+      gradient: "linear-gradient(135deg, #25D366, #128C7E)",
+    },
   ];
 
   const handleLinkClick = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -53,7 +53,7 @@ function LinkTree() {
         <div className="profile-section">
           <div className="profile-image-container">
             <div className="profile-image">
-              <FaSparkles className="sparkle-icon" />
+              <FaStar className="sparkle-icon" />
             </div>
             <div className="profile-ring"></div>
           </div>
@@ -72,13 +72,15 @@ function LinkTree() {
           {links.map((link) => (
             <div
               key={link.id}
-              className={`link-card ${hoveredLink === link.id ? 'hovered' : ''}`}
+              className={`link-card ${
+                hoveredLink === link.id ? "hovered" : ""
+              }`}
               onClick={() => handleLinkClick(link.url)}
               onMouseEnter={() => setHoveredLink(link.id)}
               onMouseLeave={() => setHoveredLink(null)}
               style={{
-                '--link-color': link.color,
-                '--link-gradient': link.gradient
+                "--link-color": link.color,
+                "--link-gradient": link.gradient,
               }}
             >
               <div className="link-icon">

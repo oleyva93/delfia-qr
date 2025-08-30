@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaQrcode, FaLink, FaSparkles, FaHeart } from "react-icons/fa";
+import { FaQrcode, FaLink, FaStar, FaHeart } from "react-icons/fa";
 import "../styles/Home.css";
 
 function Home() {
@@ -10,13 +10,14 @@ function Home() {
         <div className="hero-section">
           <div className="hero-content">
             <div className="hero-icon">
-              <FaSparkles />
+              <FaStar />
             </div>
             <h1 className="hero-title">
               Bienvenido a <span className="highlight">DELFIA</span>
             </h1>
             <p className="hero-subtitle">
-              Tu plataforma digital para crear códigos QR personalizados y conectar con tu audiencia
+              Tu plataforma digital para crear códigos QR personalizados y
+              conectar con tu audiencia
             </p>
           </div>
         </div>

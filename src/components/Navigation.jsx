@@ -11,19 +11,23 @@ function Navigation() {
         <Link to="/" className="nav-logo">
           <span className="logo-text">DELFIA</span>
         </Link>
-        
+
         <div className="nav-links">
-          <Link 
-            to="/qr-generator" 
-            className={`nav-link ${location.pathname === '/qr-generator' ? 'active' : ''}`}
+          <Link
+            to="/qr-generator"
+            className={`nav-link ${
+              location.pathname === "/qr-generator" ? "active" : ""
+            }`}
           >
             <FaQrcode className="nav-icon" />
             <span>QR Generator</span>
           </Link>
-          
-          <Link 
-            to="/link" 
-            className={`nav-link ${location.pathname === '/link' ? 'active' : ''}`}
+
+          <Link
+            to="/link"
+            className={`nav-link ${
+              location.pathname === "/link" ? "active" : ""
+            }`}
           >
             <FaLink className="nav-icon" />
             <span>Links</span>
