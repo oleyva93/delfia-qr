@@ -1,6 +1,6 @@
 .qr-generator-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,30 +9,31 @@
 }
 
 .container {
-  background: white;
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
   padding: 40px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   max-width: 600px;
   width: 100%;
   text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 h1 {
-  color: #333;
+  color: #212529;
   margin-bottom: 10px;
   font-size: 2.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #000000;
+  letter-spacing: 1px;
 }
 
 .subtitle {
-  color: #666;
+  color: #6c757d;
   margin-bottom: 30px;
   font-size: 1.1rem;
+  font-weight: 400;
 }
 
 .input-section {
@@ -42,39 +43,41 @@ h1 {
 .text-input {
   width: 100%;
   padding: 15px;
-  border: 2px solid #e1e5e9;
-  border-radius: 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
   font-size: 16px;
   font-family: inherit;
   resize: vertical;
   min-height: 100px;
   transition: border-color 0.3s ease;
   box-sizing: border-box;
+  background: white;
 }
 
 .text-input:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #495057;
+  box-shadow: 0 0 0 3px rgba(73, 80, 87, 0.1);
 }
 
 .generate-btn {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: #000000;
   color: white;
   border: none;
   padding: 15px 30px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   margin-top: 15px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .generate-btn:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background: #343a40;
 }
 
 .generate-btn:disabled {
@@ -86,13 +89,14 @@ h1 {
 .qr-section {
   margin-top: 30px;
   padding-top: 30px;
-  border-top: 2px solid #f0f0f0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .qr-section h2 {
-  color: #333;
+  color: #212529;
   margin-bottom: 20px;
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .qr-container {
@@ -101,32 +105,34 @@ h1 {
   margin-bottom: 20px;
   padding: 20px;
   background: #f8f9fa;
-  border-radius: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .qr-image {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .download-btn {
-  background: linear-gradient(135deg, #28a745, #20c997);
+  background: #495057;
   color: white;
   border: none;
   padding: 12px 25px;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+  box-shadow: 0 4px 15px rgba(73, 80, 87, 0.2);
 }
 
 .download-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+  box-shadow: 0 6px 20px rgba(73, 80, 87, 0.3);
+  background: #343a40;
 }
 
 /* Responsive design */
