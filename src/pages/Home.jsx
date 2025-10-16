@@ -28,12 +28,26 @@ function Home() {
             <div className="feature-icon qr-icon">
               <FaQrcode />
             </div>
-            <h3>Generador QR</h3>
+            <h3>Generador QR para Delfia</h3>
             <p>
               Crea códigos QR únicos con el sello "DELFIA" en el centro para tu
               marca
             </p>
-            <Link to="/qr-generator" className="feature-btn">
+            <Link to="/qr-delfia-generator" className="feature-btn">
+              Crear QR
+            </Link>
+          </div>
+
+          <div className="feature-card">
+            <div className="feature-icon qr-icon">
+              <FaQrcode />
+            </div>
+            <h3>Generador QR para BĀMA</h3>
+            <p>
+              Crea códigos QR únicos con el sello "BĀMA" en el centro para tu
+              marca
+            </p>
+            <Link to="/qr-bama-generator" className="feature-btn">
               Crear QR
             </Link>
           </div>

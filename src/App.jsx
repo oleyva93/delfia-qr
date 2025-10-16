@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
 import QRGenerator from "./pages/QRGenerator";
+import QRBamaGenerator from "./pages/QRBamaGenerator";
 import LinkTree from "./pages/LinkTree";
 import "./App.css";
 
@@ -13,7 +14,8 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/qr-generator" element={<QRGenerator />} />
+            <Route path="/qr-delfia-generator" element={<QRGenerator />} />
+            <Route path="/qr-bama-generator" element={<QRBamaGenerator />} />
             <Route path="/link" element={<LinkTree />} />
           </Routes>
         </main>
