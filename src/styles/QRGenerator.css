@@ -171,3 +171,7 @@ h1 {
 .qr-section {
   animation: fadeIn 0.5s ease-out;
 }
+
+.text-black {
+  color: black;
+}
