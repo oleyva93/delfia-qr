@@ -101,7 +101,7 @@ function QRGenerator() {
             onChange={(e) => setInputText(e.target.value)}
             placeholder="Ingresa un texto, URL o cualquier contenido..."
             rows={4}
-            className="text-input"
+            className="text-input text-black"
           />
 
           <button
