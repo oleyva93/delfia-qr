@@ -52,6 +52,20 @@ function Home() {
             </Link>
           </div>
 
+           <div className="feature-card">
+            <div className="feature-icon qr-icon">
+              <FaQrcode />
+            </div>
+            <h3>Generador QR</h3>
+            <p>
+              Crea códigos QR únicos para tu
+              marca
+            </p>
+            <Link to="/qr-any-generator" className="feature-btn">
+              Crear QR
+            </Link>
+          </div>
+
           <div className="feature-card">
             <div className="feature-icon link-icon">
               <FaLink />
