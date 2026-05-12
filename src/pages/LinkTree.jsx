@@ -5,6 +5,7 @@ import {
   FaWhatsapp,
   FaHeart,
   FaStar,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import { BiStore } from "react-icons/bi";
 import "../styles/LinkTree.css";
@@ -39,6 +40,15 @@ function LinkTree() {
       icon: FaWhatsapp,
       color: "#25D366",
       gradient: "linear-gradient(135deg, #25D366, #128C7E)",
+    },
+    {
+      id: 4,
+      title: "Localizacion",
+      subtitle: "Encuentranos aqui",
+      url: "https://maps.app.goo.gl/P7fc8Zn36j1nQ6aa7",
+      icon: FaMapMarkerAlt,
+      color: "#EA4335",
+      gradient: "linear-gradient(135deg, #EA4335, #C62828)",
     },
   ];
 
