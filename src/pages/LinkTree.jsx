@@ -25,7 +25,7 @@ function LinkTree() {
     },
     {
       id: 2,
-      title: "Tienda Online / Catalogo",
+      title: "Tienda Online",
       subtitle: "Joyería con brillo ✨",
       url: "https://delfia-mx.myshopify.com",
       icon: BiStore,
